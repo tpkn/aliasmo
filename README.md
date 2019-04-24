@@ -1,5 +1,5 @@
 # Aliasmo
-Require NodeJs module using alias
+Require NodeJs modules using alias
 
 :warning: Tested only on CommonJS system, and not too far in deep.
 
@@ -8,7 +8,7 @@ Require NodeJs module using alias
 ```javascript
 require('aliasmo')();
 
-// or 
+// or without modifying package.json file
 
 require('aliasmo')({ 
    "@root": ".",
@@ -18,7 +18,7 @@ require('aliasmo')({
 });
 ```
 
-## package.json
+### package.json
 ```json
 {
    "name": "app",
