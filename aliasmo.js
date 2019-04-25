@@ -6,7 +6,7 @@ const path = require('path');
 const Module = require('module');
 const Require = Module.prototype.require;
 
-module.exports = (aliases_list) => {
+module.exports = (aliases_list, macros = '@') => {
    try {
 
       let aliases;
@@ -23,9 +23,9 @@ module.exports = (aliases_list) => {
       }
 
       Module.prototype.require = function(...args){
-         if(args[0].indexOf('@') === 0){
+         if(args[0].indexOf(macros) === 0){
             for(let alias in aliases){
-               if(args[0].indexOf(alias) !== -1){
+               if(args[0].indexOf(alias) === 0){
                   args[0] = path.resolve(args[0].replace(alias, aliases[alias]));
                   break
                }
