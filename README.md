@@ -1,4 +1,4 @@
-# Aliasmo
+# Aliasmo [![npm Package](https://img.shields.io/npm/v/aliasmo.svg)](https://www.npmjs.org/package/aliasmo)
 Require NodeJs modules using alias
 
 :warning: Tested only on CommonJS system, and not too far in deep.
