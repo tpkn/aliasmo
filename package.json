@@ -1,7 +1,7 @@
 {
    "name": "aliasmo",
    "main": "aliasmo.js",
-   "version": "1.0.2",
+   "version": "1.0.3",
    "author": {
       "url": "https://github.com/tpkn/"
    },
